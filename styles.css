@@ -1,0 +1,217 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 20px;
+    background-color: #f86580;
+    color: #333;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Efecto de Zoom Cursor Imágenes*/
+.rebound-effect:hover {
+    transform: scale(1.05);
+}
+
+/* Scrollbar*/
+::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 10px;
+}
+
+/* Track de la scrollbar (fondo del scroll) */
+::-webkit-scrollbar-track {
+    /* Color beige de fondo */
+    background: #fdf2f4;
+    border-radius: 10px;
+    /* Bordes alrededor de la barra */
+    border: 1px solid #e89cae;
+}
+
+/* Handle de la scrollbar (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+    /* Degradado vertical */
+    background: linear-gradient(180deg, #e89cae, #f9e4e9);
+    border-radius: 10px;
+    /* Borde alrededor del handle */
+    border: 2px solid #fdf2f4;
+}
+
+/* Handle cuando el mouse está sobre la scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    /* Degradado más oscuro al hacer hover */
+    background: linear-gradient(180deg, #b56576, #e89cae);
+}
+
+/* Cambiar el estilo del scroll cuando está activo */
+::-webkit-scrollbar-thumb:active {
+    /* Degradado más oscuro al hacer clic */
+    background: linear-gradient(180deg, #a64956, #b56576);
+}
+
+/* Nav Bar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ed9eae;
+    z-index: 100;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF8E8;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ff6484;
+}
+
+/* Ajuste para el espacio superior */
+.header-space {
+    padding-top: 60px;
+}
+
+/* Sección Inicio */
+.inicio {
+    height: 100vh;
+    background: linear-gradient(rgba(253, 242, 244, 0.7), rgba(253, 242, 244, 0.7)), url('hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: #b56576;
+}
+
+.hero p {
+    font-size: 22px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ff6484;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fbf3e5;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    /* Efecto de elevación del botón */
+    background-color: #ec9cac;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    /* Reduce el efecto de elevación cuando se hace clic en el botón*/
+    transform: translateY(2px);
+    box-shadow: 5px;
+    padding: 20px;
+    text-align: center;
+    color: #b89198;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Servicios */
+.servicios {
+    padding: 80px 20px;
+    background-color: #ed8da7;
+}
+
+.servicios h2 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f2c4cf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+.form {
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(62, 54, 62);
+}
+
+/* Portafolio */
+.portafolio {
+    padding: 90px 20px;
+    background-color: #fdf2f4;
+    text-align: center;
+}
+
+.portafolio h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+}

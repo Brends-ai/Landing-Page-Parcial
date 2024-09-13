@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <!-- Icono Página -->
+    <link rel="icon" href="imagenes/florlogo.png">
+    <!-- Enlace Fuente de Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Scrollbar -->
+    <div id="progressBarContainer">
+        <div id="progressBar"></div>
+    </div>
+    <!-- Nav Bar-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header -->
+    <main class="header-space">
+        <!-- Banner -->
+        <div class="grid-container">
+            <div class="grid-item"> <img src="imagenes/bannerbrendaRecurso 3@4x.png" width="100%" height="100%"
+                    alt="Banner Brenda"> </div>
+        </div>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="inicio">
+            <div class="hero">
+                <h1>Bienvenido a Mi Mundo Creativo</h1>
+                <p>Donde la Elegancia y el Diseño se Encuentran</p> <br> <a
+                    href="https://brendasofiamejiahidalgo.artstation.com/" class="btn">Descubre más</a>
+            </div>
+        </section>
+        <!-- Sección Portafolio -->
+        <section id="portafolio" class="portafolio">
+            <h2 style="text-align: center;">Portafolio Destacado</h2>
+            <div class="grid-container">
+                <div class="grid-item"> <img src="imagenes/pajarito.JPG" width="100%" height="100%"
+                        alt="Fotografía de Paisaje 1" class="rebound-effect"> </div>
+                <p>Fotografía de Paisaje Tomada por Brenda Sofia Mejía Hidalgo</p>
+                <div class="grid-item"> <img src="imagenes/tous2.png" width="100%" height="100%"
+                        alt="Fotografía de Producto 2" class="rebound-effect"> </div>
+                <p>Fotografía de Producto Tomada por Brenda Sofia Mejía Hidalgo</p>
+                <div class="grid-item"> <img src="imagenes/pato.png" width="100%" height="100%" alt="Proyecto 4"
+                        class="rebound-effect"> </div>
+                <p>Fotografía de Paisaje Tomada por Brenda Sofia Mejía Hidalgo</p>
+                <div class="grid-item"> <video width="100%" height="auto" autoplay muted loop>
+                        <source src="imagenes/videocubito.mp4" type="video/mp4">
+                    </video> </div>
+                <p>Proyecto en 3D Modelado y Animado por Brenda Sofia Mejía Hidalgo</p>
+            </div>
+        </section>
+        <!-- Sección Servicios -->
+        <section id="servicios" class="servicios">
+            <h2>Servicios Profesionales</h2>
+            <div class="service-container">
+                <div class="service-item">
+                    <h3>Modelado 3D</h3>
+                    <p>Creamos conceptos visuales que impactan y reflejan tu visión.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Producción y edición de video</h3>
+                    <p>Generamos contenido impactante para que destaques en tus redes sociales.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Consultoría Creativa</h3>
+                    <p>Te guiamos desde la idea hasta la ejecución con precisión.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Contacto -->
+        <form action="#" class="contact-form"> <label for="nombre">Nombre:</label> <input type="text" id="nombre"
+                name="nombre" placeholder="Nombre" autocomplete="name" required> <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required> <label
+                for="mensaje">Tu mensaje:</label> <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje"
+                autocomplete="off" required></textarea> <button type="submit">Enviar</button>
+        </form>
+        <!-- Sección Blog -->
+        <section id="blog" class="blog"> <br>
+            <h2 style="text-align: center;">Últimos Artículos</h2>
+            <div class="blog-container">
+                <article class="blog-post"> <br>
+                    <h3>Cómo Mejorar tu Creatividad</h3>
+                    <p>Consejos para inspirarte y elevar tu potencial creativo.</p> <button>Leer más</button>
+                </article>
+                <article class="blog-post"> <br>
+                    <h3>Últimas Tendencias en Diseño</h3>
+                    <p>Explora las tendencias más frescas del mundo del diseño.</p> <button>Leer más</button>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer> <br>
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
